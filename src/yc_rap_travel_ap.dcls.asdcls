@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Contro for Travel Projection'
+@MappingRole: true
+define role YC_RAP_TRAVEL_AP {
+    grant
+        select
+            on
+                YC_RAP_TRAVEL_AP
+                    where
+                        inheriting conditions from entity YI_RAP_TRAVEL_AP;
+                        
+}
